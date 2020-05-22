@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+@paramount = Studio.create(name: "Paramount", location: "California" )
+@a24 = Studio.create(name: "A24", location: "New York" )
+@interstellar = @paramount.movies.create(title: "Interstellar", creation_year: 2014, genre: "Sci-fi")
+@midsommar = @a24.movies.create(title: "Midsommar", creation_year: 2019, genre: "Horror")
+@moonlight = @a24.movies.create(title: "Moonlight", creation_year: 2016, genre: "Drama")
