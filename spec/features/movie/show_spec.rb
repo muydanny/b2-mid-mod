@@ -8,6 +8,10 @@ RSpec.describe "When I visit the movie's show page" do
     @interstellar = @paramount.movies.create(title: "Interstellar", creation_year: 2014, genre: "Sci-fi")
     @midsommar = @a24.movies.create(title: "Midsommar", creation_year: 2019, genre: "Horror")
     @moonlight = @a24.movies.create(title: "Moonlight", creation_year: 2016, genre: "Drama")
+    @florence = @midsommar.actors.create(name: "Florence Pugh", age: 24)
+    @will = @midsommar.actors.create(name: "Will Poulter", age: 26)
+    @jack = @midsommar.actors.create(name: "Jack Reynor", age: 27)
+    @harper = @midsommar.actors.create(name: "Harper", age: 40)
   end
   it "I see movies title, creation year, and genre" do
 
@@ -16,6 +20,17 @@ RSpec.describe "When I visit the movie's show page" do
     expect(page).to have_content(@midsommar.title)
     expect(page).to have_content(@midsommar.creation_year)
     expect(page).to have_content(@midsommar.genre)
+    expect(page).to_not have_content(@moonlight.title)
+  end
+
+  it "list of all its actors from youngest to oldest" do
+
+    visit "/movies/#{@midsommar.id}"
+
+    expect("Florence Pugh").to appear_before("Will Poulter")
+    expect("Will Poulter").to appear_before("Jack Reynor")
+    expect("Jack Reynor").to appear_before("Harper")
+
   end
 end
 
