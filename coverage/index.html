@@ -14,7 +14,7 @@
       <img src="./assets/0.11.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-05-22T10:25:49-06:00">2020-05-22T10:25:49-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-05-22T11:47:50-06:00">2020-05-22T11:47:50-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  93.81%
 </span>
 
      </span>
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>21</b> files in total.
+    <b>24</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>77</b> relevant lines,
-    <span class="green"><b>77</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>97</b> relevant lines,
+    <span class="green"><b>91</b> lines covered</span> and
+    <span class="red"><b>6</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  93.81%
 </span>
 )
   </div>
@@ -87,7 +87,7 @@
           <td>3</td>
           <td>3</td>
           <td>0</td>
-          <td>1.0</td>
+          <td>1.67</td>
           
         </tr>
       
@@ -114,6 +114,17 @@
         </tr>
       
         <tr class="t-file">
+          <td class="strong t-file__name"><a href="#22b2ba0ff05bffd6af4c414ceb6365e8f63a064f" class="src_link" title="app/models/actor.rb">app/models/actor.rb</a></td>
+          <td class="green strong t-file__coverage">100.0 %</td>
+          <td>9</td>
+          <td>6</td>
+          <td>6</td>
+          <td>0</td>
+          <td>1.33</td>
+          
+        </tr>
+      
+        <tr class="t-file">
           <td class="strong t-file__name"><a href="#ba0cd5ad65317e8430b776527d1715f847824e09" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
           <td class="green strong t-file__coverage">100.0 %</td>
           <td>3</td>
@@ -127,9 +138,20 @@
         <tr class="t-file">
           <td class="strong t-file__name"><a href="#f0467c488a4df8da6470c23314279ad51002b637" class="src_link" title="app/models/movie.rb">app/models/movie.rb</a></td>
           <td class="green strong t-file__coverage">100.0 %</td>
+          <td>10</td>
           <td>6</td>
+          <td>6</td>
+          <td>0</td>
+          <td>1.33</td>
+          
+        </tr>
+      
+        <tr class="t-file">
+          <td class="strong t-file__name"><a href="#87425604bd1972ac4a7bd5d1a744d41c3fb793fb" class="src_link" title="app/models/movie_actor.rb">app/models/movie_actor.rb</a></td>
+          <td class="green strong t-file__coverage">100.0 %</td>
           <td>4</td>
-          <td>4</td>
+          <td>3</td>
+          <td>3</td>
           <td>0</td>
           <td>1.0</td>
           
@@ -300,6 +322,17 @@
           
         </tr>
       
+        <tr class="t-file">
+          <td class="strong t-file__name"><a href="#f74a7b4fffde122c3e9b0973a100597a2e2de495" class="src_link" title="spec/models/actor_spec.rb">spec/models/actor_spec.rb</a></td>
+          <td class="red strong t-file__coverage">33.33 %</td>
+          <td>25</td>
+          <td>9</td>
+          <td>3</td>
+          <td>6</td>
+          <td>0.33</td>
+          
+        </tr>
+      
     </tbody>
   </table>
 </div>
@@ -440,8 +473,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="3" data-linenumber="4">
+            <span class="hits">3</span>
             
 
             
@@ -627,6 +660,136 @@
 </div>
 
       
+        <div class="source_table" id="22b2ba0ff05bffd6af4c414ceb6365e8f63a064f">
+  <div class="header">
+    <h3>app/models/actor.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Actor &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates_presence_of :name, :age</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  has_many :movie_actors</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  has_many :movies, through: :movie_actors</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.sort_by_age</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="7">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    order(:age)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="ba0cd5ad65317e8430b776527d1715f847824e09">
   <div class="header">
     <h3>app/models/application_record.rb</h3>
@@ -705,8 +868,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -774,6 +937,125 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def average_age_actors</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="8">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    actors.average(:age)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="87425604bd1972ac4a7bd5d1a744d41c3fb793fb">
+  <div class="header">
+    <h3>app/models/movie_actor.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class MovieActor &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :movie</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :actor</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
@@ -3445,6 +3727,312 @@
             
 
             <code class="ruby"># all of its movies.</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="f74a7b4fffde122c3e9b0973a100597a2e2de495">
+  <div class="header">
+    <h3>spec/models/actor_spec.rb</h3>
+    <h4>
+      <span class="red">
+  33.33%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>9</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe &#39;methods&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  xit &quot;#sort_by_age&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">    @florence = Actor.create!(name: &quot;Florence Pugh&quot;, age: 24)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">    @will = Actor.create!(name: &quot;Will Poulter&quot;, age: 26)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">    @jack = Actor.create!(name: &quot;Jack Reynor&quot;, age: 27)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">    @harper = Actor.create!(name: &quot;Harper&quot;, age: 40)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">    @actors = Actor.all</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">    expect(@actors.sort_by_age).to eq(@actors)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  # got: 0.2925e2 for average age instead of sory by</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby"># How come this happened? Got stuck on this error.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">#&lt;Actor:0x00007fbabb11be30 id: 197, name: &quot;Florence Pugh&quot;, age: 24&gt;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">#&lt;Actor:0x00007fbabb11bcf0 id: 198, name: &quot;Will Poulter&quot;, age: 26&gt;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">#&lt;Actor:0x00007fbabb11bbb0 id: 199, name: &quot;Jack Reynor&quot;, age: 27&gt;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">#&lt;Actor:0x00007fbabb11ba70 id: 200, name: &quot;Harper&quot;, age: 40&gt;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">#&lt;Actor:0x00007fbab77c79e0 id: 197, name: &quot;Florence Pugh&quot;, age: 24&gt;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">#&lt;Actor:0x00007fbab77c75a8 id: 198, name: &quot;Will Poulter&quot;, age: 26&gt;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">#&lt;Actor:0x00007fbab77c7260 id: 199, name: &quot;Jack Reynor&quot;, age: 27&gt;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">#&lt;Actor:0x00007fbab77c6e78 id: 200, name: &quot;Harper&quot;, age: 40&gt;]</code>
           </li>
         </div>
       

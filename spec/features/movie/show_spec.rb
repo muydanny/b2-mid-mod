@@ -32,6 +32,13 @@ RSpec.describe "When I visit the movie's show page" do
     expect("Jack Reynor").to appear_before("Harper")
 
   end
+  it "I see the average age of all of the movie's actors" do
+
+    visit "/movies/#{@midsommar.id}"
+
+    expect(page).to have_content("Average Age of Actors: 29")
+
+  end
 end
 
 # When I visit a movie's show page.

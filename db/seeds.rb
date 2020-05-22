@@ -11,3 +11,7 @@
 @interstellar = @paramount.movies.create(title: "Interstellar", creation_year: 2014, genre: "Sci-fi")
 @midsommar = @a24.movies.create(title: "Midsommar", creation_year: 2019, genre: "Horror")
 @moonlight = @a24.movies.create(title: "Moonlight", creation_year: 2016, genre: "Drama")
+@florence = @midsommar.actors.create(name: "Florence Pugh", age: 24)
+@will = @midsommar.actors.create(name: "Will Poulter", age: 26)
+@jack = @midsommar.actors.create(name: "Jack Reynor", age: 27)
+@harper = @midsommar.actors.create(name: "Harper", age: 40)
