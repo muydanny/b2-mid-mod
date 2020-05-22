@@ -39,9 +39,28 @@ RSpec.describe "When I visit the movie's show page" do
     expect(page).to have_content("Average Age of Actors: 29")
 
   end
+  it "see form for an actors name" do
+    visit "/movies/#{@midsommar.id}"
+
+    expect(page).not_to have_content("Tom")
+    expect(page).not_to have_content("Age: 43")
+
+    click_link("Create Actor")
+    
+  end
 end
 
-# When I visit a movie's show page.
+
+# As a visitor,
+# When I visit a movie show page,
+# I see a form for an actors name
+# and when I fill in the form with an existing actor's name
+# I am redirected back to that movie's show page
+# And I see the actor's name listed
+# (This should not break story 3, You do not have to test for a sad path)
+
+
+# # When I visit a movie's show page.
 # I see the movie's title, creation year, and genre,
 # and a list of all its actors from youngest to oldest.
 # And I see the average age of all of the movie's actors
