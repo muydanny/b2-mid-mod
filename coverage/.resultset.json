@@ -205,7 +205,7 @@
       "/Users/dannyramos/turing/2module/b2-mid-mod/config/routes.rb": {
         "lines": [
           1,
-          null,
+          1,
           null
         ]
       },
@@ -240,8 +240,25 @@
           null,
           null
         ]
+      },
+      "/Users/dannyramos/turing/2module/b2-mid-mod/app/controllers/studios_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/dannyramos/turing/2module/b2-mid-mod/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1590161884
+    "timestamp": 1590163398
   }
 }
